@@ -1,0 +1,116 @@
+{% extends 'base_forms.html' %}
+
+{% block title %}Travelwise -  Los expertos en viajes{% endblock %}
+
+{% block content %}
+      
+          <div class="col-sm-9 col-md-offset-3 col-md-10 col-md-offset-2 main mbl">
+            <div class="row">
+              <div class="col-md-12">
+                <p>Paso {{ wizard.steps.step1 }} de {{ wizard.steps.count }}</p>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 16%;"></div></div>
+                </div>
+              </div>
+              
+              
+              <form role="form" method="POST">{% csrf_token %}
+              {{ wizard.management_form }}
+              <div class="row">
+
+
+                <div class="col-md-12">
+
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Datos de la persona que está reservando<span class="help-block">Debe tener al menos 18 años o más</span></h3>
+                    </div>
+                    <div class="panel-body">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Nombre</label>
+                          {{ form.book_first_name }}
+                          <span class="help-block">Nombre de la persona que está reservando</span>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Apellido</label>
+                          <input type="text" class="form-control" id="exampleInput1" placeholder="Escriba su apellido">
+                          <span class="help-block">Apellido de la persona que está reservando</span>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Teléfono de contacto</label>
+                          {{ form.book_phone }}
+                          <span class="help-block">Escriba su número de contacto</span>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Email de contacto</label>
+                          {{ form.book_email }}
+                          <span class="help-block">Escriba su email de contacto</span>
+                        </div>
+                      </div> 
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Número de pasaporte</label>
+                          {{ form.book_passport }}
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Cuál es su nacionalidad?</label>
+                          {{ form.book_nationality }}
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          {{ form.book_sex }}
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="">Requerimientos especiales y preferencias</label>
+                          {{ form.book_special_requirements }}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                
+              </div>
+              <button type="submit" value="{{ wizard.steps.next }}" class="btn btn-primary">IR A PASO 2 <span class="fui-arrow-right"></span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+        // Typeahead
+    if ($('#typeahead-demo-01').length) {
+      var states = new Bloodhound({
+        datumTokenizer: function (d) { return Bloodhound.tokenizers.whitespace(d.word); },
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        limit: 4,
+        local: [
+          { word: 'Alabama' },
+          { word: 'Alaska' },
+          { word: 'Arizona' },
+          { word: 'Arkansas' },
+          { word: 'California' },
+          { word: 'Colorado' }
+        ]
+      });
+</script>
+{% endblock %}

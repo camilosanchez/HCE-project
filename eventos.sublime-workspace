@@ -1,0 +1,314 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"d",
+				"dd	Tag"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"border",
+				"border-right"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"h",
+				"h5	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "from unipath import Path\n\nBASE_DIR = Path(__file__).ancestor(3)\n\n\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/\n\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = '+$0y#d=64#!e(sttiqdxm1c5^ml5)ixq4ygw%9a9n#aa8vefw-'\n\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n\nTEMPLATE_DEBUG = True\n\nALLOWED_HOSTS = []\n\n\n# Application definition\nDJANGO_APPS = (\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n)\n\n\nTHIRD_PARTY_APPS = (\n    \n)\n\nLOCAL_APPS = (\n    'apps.events',\n    'apps.users',\n)\n\nINSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS \n\nMIDDLEWARE_CLASSES = (\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n)\n\nROOT_URLCONF = 'eventos_project.urls'\n\nWSGI_APPLICATION = 'eventos_project.wsgi.application'\n\n# Internationalization\n# https://docs.djangoproject.com/en/1.7/topics/i18n/\n\nLANGUAGE_CODE = 'en-us'\n\nTIME_ZONE = 'UTC'\n\nUSE_I18N = True\n\nUSE_L10N = True\n\nUSE_TZ = True\n\nTEMPLATE_DIRS = [BASE_DIR.child('templates')]",
+			"file": "eventos_project/eventos_project/settings/base.py",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 1586,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/camilosanchez/projects/eventos",
+		"/Users/camilosanchez/projects/eventos/eventos"
+	],
+	"file_history":
+	[
+		"/Users/camilosanchez/projects/eventos/eventos_project/eventos_project/settings.py",
+		"/Users/camilosanchez/projects/eventos/requirements/production.txt",
+		"/Users/camilosanchez/projects/eventos/requirements/staging.txt",
+		"/Users/camilosanchez/projects/eventos/requirements/local.txt",
+		"/Users/camilosanchez/projects/eventos/requirements/base.txt",
+		"/Users/camilosanchez/projects/eventos/.gitignore",
+		"/Users/camilosanchez/Eventos/eventos-flat/less/modules/thumbnails.less",
+		"/Users/camilosanchez/Eventos/eventos-flat/dist/step2.html",
+		"/Users/camilosanchez/Eventos/eventos-flat/dist/detalle-personalizado.html",
+		"/Users/camilosanchez/Eventos/eventos-flat/dist/detalle-hotel.html",
+		"/Users/camilosanchez/Eventos/eventos-flat/dist/step1.html",
+		"/Users/camilosanchez/Eventos/eventos-flat/less/flat-ui-pro.less",
+		"/Users/camilosanchez/Eventos/eventos-flat/dist/home.html",
+		"/Users/camilosanchez/Eventos/eventos-flat/dist/css/cover.css",
+		"/Users/camilosanchez/Eventos/eventos-flat/dist/step4.html",
+		"/Users/camilosanchez/Eventos/eventos-flat/dist/step3.html",
+		"/Users/camilosanchez/Eventos/eventos-flat/dist/confirmacion.html",
+		"/Users/camilosanchez/Eventos/eventos-flat/docs/examples/navbars-with-elements.html",
+		"/Users/camilosanchez/Eventos/eventos-flat/less/modules/glyphicons.less",
+		"/Users/camilosanchez/Eventos/eventos-flat/less/modules/progress-bars.less",
+		"/Users/camilosanchez/Eventos/eventos-flat/dist/css/flat-ui-pro.css",
+		"/Users/camilosanchez/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/camilosanchez/Eventos/eventos-flat/docs/template.html",
+		"/Users/camilosanchez/Eventos/eventos/mixture.json",
+		"/Users/camilosanchez/Eventos/eventos/less/material.less",
+		"/Users/camilosanchez/Eventos/eventos/assets/css/material-wfont.css",
+		"/Users/camilosanchez/Eventos/eventos/less/ripples.less",
+		"/Users/camilosanchez/Eventos/eventos/dist/test.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mastfoot",
+			"btn",
+			"button",
+			"btn",
+			"<div class=\"panel panel-default\">",
+			"text",
+			"navbar-default",
+			"panel-primary-border",
+			"&",
+			"navbar-right",
+			"container-fluid",
+			"navbar-brand",
+			"min-hei",
+			"panel-title",
+			"panel-primary-border",
+			"panel-primary",
+			"panel-primary-heading-bg",
+			"panel-heading",
+			"navbar",
+			"body",
+			"volver",
+			"fui-plus-circle",
+			"fui",
+			"175x120",
+			"domingo",
+			"horizon",
+			"hll",
+			"viaje",
+			"typeahead",
+			"style=\"background-color:#f5f5f5\"",
+			"background",
+			"2013",
+			"hl",
+			"form class=\"form",
+			"class=\"form",
+			"warning",
+			"small",
+			"cual es su sexo",
+			"div",
+			"datepickerSelector2",
+			"textarea",
+			"spinner",
+			"#datepicker-02",
+			"sidebar"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<div class=\"panel panel-primary\">",
+			"fui-plus",
+			"165x120",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "eventos_project/eventos_project/settings/base.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1586,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "eventos.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 207.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

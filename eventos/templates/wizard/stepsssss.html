@@ -1,0 +1,202 @@
+{% extends 'base_forms.html' %}
+
+{% block title %}Travelwise -  Los expertos en viajes{% endblock %}
+
+{% block content %}
+
+
+          <div class="col-sm-9 col-md-offset-3 col-md-10 col-md-offset-2 main mbl">
+            <div class="row">
+              <div class="col-md-12">
+                <p>Paso 2 de 6</p>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 32%;"></div></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Datos sobre su viaje</h3>
+                    </div>
+                    <div class="panel-body">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                        <label for="">Ciudad de origen desde dónde viaja</label>
+                          <input class="form-control" type="text" id="typeahead-demo-01" placeholder="¿Desde cuál ciudad estará viajando?" />
+                        </div>
+                      </div>
+                      <div class="col-md-5 mtl">
+                        <div class="form-group">
+                          <label for="">Cuándo quiere llegar a Rep. Dom.?</label>
+                          <div class="input-group">
+                            <span class="input-group-btn">
+                              <button class="btn" type="button"><span class="fui-calendar"></span></button>
+                            </span>
+                            <input type="text" class="form-control" value="14 March, 2015" id="datepicker-01" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5 mtl">
+                        <div class="form-group">
+                          <label for="">Cuándo quiere salir de Rep. Dom.?</label>
+                          <div class="input-group">
+                            <span class="input-group-btn">
+                              <button class="btn" type="button"><span class="fui-calendar"></span></button>
+                            </span>
+                            <input type="text" class="form-control timepicker-with-dropdowns" value="14 March, 2015" id="datepicker-02" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-horizontal">
+                        <div class="col-md-12">
+                          <p class="hll pts"><strong>¿Quién está viajando con usted?</strong></p>
+                          <section class="mbl">
+                            <p>Adultos</p>
+                            <button class="btn btn-primary btn-sm" data-duplicate-add="adultos"><span class="fui-plus"></span> Agregar adulto</button>
+                            <button class="btn btn-danger btn-sm" data-duplicate-remove="adultos"><span class="fui-trash"></span> Borrar</button>
+
+                            <div class="mtm" data-duplicate="adultos">
+                              <div class="row">
+                                <div class="col-sm-1">
+                                  <button class="btn btn-danger btn-sm" data-duplicate-remove="adultos"><span class="fui-trash"></span></button>
+                                </div>                      
+                                <div class="col-sm-4">
+                                  <div class="form-group form-group-sm">
+                                    <input type="text" class="form-control" id="exampleInput1" placeholder="Nombre y apellido">
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-3 mlm">
+                                  <div class="form-group form-group-sm">
+                                    <input type="text" class="form-control" id="exampleInput1" placeholder="Pasaporte">
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-3 mlm">
+                                  <div class="form-group form-group-sm">
+                                    <input type="text" class="form-control" id="exampleInput1" placeholder="email">
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+
+                          <section class="mbl">
+                            <p>Niños (Menores de 12 años)</p>
+                            <button class="btn btn-primary btn-sm" data-duplicate-add="nino"><span class="fui-plus"></span> Agregar niño</button>
+                            <button class="btn btn-danger btn-sm" data-duplicate-remove="nino"><span class="fui-trash"></span> Borrar</button>
+
+                            <div class="mtm" data-duplicate="nino">
+                              <div class="row">
+                                <div class="col-sm-1">
+                                  <button class="btn btn-danger btn-sm" data-duplicate-remove="nino"><span class="fui-trash"></span></button>
+                                </div>                      
+                                <div class="col-sm-4">
+                                  <div class="form-group form-group-sm">
+                                    <input type="text" class="form-control" id="exampleInput1" placeholder="Nombre y apellido">
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-3 mlm">
+                                  <div class="form-group form-group-sm">
+                                    <input type="text" class="form-control" id="exampleInput1" placeholder="Pasaporte">
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-3 mlm">
+                                  <div class="form-group form-group-sm">
+                                    <input type="text" class="form-control" id="exampleInput1" placeholder="Edad al momento del viaje">
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                        </div>
+
+                        
+
+
+
+                        <div class="col-md-12">
+                          <p class="hll pts"><strong>¿Requiere transporte del aeropuerto al hotel?</strong></p>
+                            <select data-toggle="select" class="form-control select select-primary select-lg">
+                              <option value="0">Por favor, indique si requiere transporte del aeropuerto al hotel</option>
+                              <option value="1">No requiero transporte</option>
+                              <option value="2">Si requiero transporte - US$78 auto (1 pasajero) cada vuelta</option>
+                              <option value="2">Si requiero transporte - US$39 auto p/p (2 pasajeros) cada vuelta</option>
+                              <option value="2">Si requiero transporte - US$32 Van p/p (3 pasajeros) cada vuelta</option>
+                              <option value="2">Si requiero transporte - US$24 Van p/p (4 pasajeros) cada vuelta</option>
+                            </select>
+                            <span class="help-block">Precios por transporte por cada vuelta</span>
+                          
+                        </div>
+                        
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div><!-- /.row -->
+              <a href="step1.html" class="btn btn-default"><span class="fui-arrow-left"></span> VOLVER A PASO 1</a>
+              <a href="step3.html" class="btn btn-primary">IR A PASO 3 <span class="fui-arrow-right"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+        <script src="js/vendor/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        
+        <script src="js/flat-ui-pro.min.js"></script>
+        <script src="http://jdewit.github.io/bootstrap-timepicker/assets/prettify/prettify.js"></script>
+        <script src="js/application.js"></script>
+        <script src="js/jquery.duplicate.js"></script>
+
+        <script>
+        // jQuery UI Datepicker
+        var datepickerSelector2 = $('#datepicker-02');
+        datepickerSelector2.datepicker({
+          showOtherMonths: true,
+          selectOtherMonths: true,
+          dateFormat: "d MM, yy",
+          yearRange: '-1:+1',
+          changeMonth: true,
+          changeYear: true
+        }).prev().on('click', function (e) {
+          e && e.preventDefault();
+          datepickerSelector2.focus().blur();
+        });
+        $.extend($.datepicker, {_checkOffset:function(inst,offset,isFixed){return offset}});
+
+      // Now let's align datepicker with the prepend button
+      datepickerSelector2.datepicker('widget').css({'margin-left': -datepickerSelector2.prev('.input-group-btn').find('.btn').outerWidth()});
+
+
+
+      // jQuery UI Datepicker
+      var datepickerSelector3 = $('#datepicker-03');
+      datepickerSelector3.datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        dateFormat: "d MM, yy",
+        yearRange: '-1:+1',
+        changeMonth: true,
+        changeYear: true
+      }).prev().on('click', function (e) {
+        e && e.preventDefault();
+        datepickerSelector3.focus().blur();
+      });
+      $.extend($.datepicker, {_checkOffset:function(inst,offset,isFixed){return offset}});
+
+      // Now let's align datepicker with the prepend button
+      datepickerSelector3.datepicker('widget').css({'margin-left': -datepickerSelector3.prev('.input-group-btn').find('.btn').outerWidth()});
+
+    </script>
+
+  </body>
+  </html>
