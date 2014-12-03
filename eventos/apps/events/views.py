@@ -47,11 +47,19 @@ class RegisterStepsWizard(SessionWizardView):
 				assistant_form = [FormStep4(self.request.POST, prefix=str(x), instance=ActivityAssist()) for x in range(0, activity_object_count)]
 				context ['actividades_forms'] = zip (assistant_form, activity_object)
 			
-		print context['wizard']
-		print self.steps.__class__
-		print self.get_form
+		print context['actividades_forms']
+		#print self.steps.__class__
+		#print self.get_form
 		# import pdb; pdb.set_trace()
 		return context
+
+	def render(self, form=None, **kwargs):
+        """
+        Returns a ``HttpResponse`` containing all needed context data.
+        """
+        form = form or self.get_form()
+        context = self.get_context_data(form=form, **kwargs)
+        return self.render_to_response(context)
 
 	def get_template_names(self):
 		return [TEMPLATES[self.steps.current]]

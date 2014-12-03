@@ -17,17 +17,16 @@
         {{ form }}
     {% endfor %}
 {% else %}
-    {{ wizard.form }}
+    {% for tuple in wizard.actividades_forms %}
+    <p>{{ tuple.1 }}
+	<p>{{ tuple.0 }}</p>
+{% endfor %}
 {% endif %}
 </table>
 {% if wizard.steps.prev %}
 <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.first }}">{% trans "first step" %}</button>
 <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.prev }}">{% trans "prev step" %}</button>
 {% endif %}
-{% for tuple in actividades_forms %}
-    <p>{{ tuple.1 }}
-	<p>{{ tuple.0 }}</p>
-{% endfor %}
 <input type="submit" value="{% trans "submit" %}"/>
 </form>
 {% endblock %}
